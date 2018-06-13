@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zhibi.cms.mapper.SysCategoryMapper">
+  <resultMap id="BaseResultMap" type="zhibi.cms.domain.SysCategory">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="active" jdbcType="VARCHAR" property="active" />
+    <result column="view" jdbcType="VARCHAR" property="view" />
+    <result column="bannerClass" jdbcType="VARCHAR" property="bannerclass" />
+    <result column="iconClass" jdbcType="VARCHAR" property="iconclass" />
+    <result column="siteid" jdbcType="VARCHAR" property="siteid" />
+    <result column="info" jdbcType="VARCHAR" property="info" />
+    <result column="addTime" jdbcType="TIMESTAMP" property="addtime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, sort, code, active, view, bannerClass, iconClass, siteid, info, addTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_category
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sys_category
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="zhibi.cms.domain.SysCategory">
+    insert into sys_category (id, name, sort, 
+      code, active, view, 
+      bannerClass, iconClass, siteid, 
+      info, addTime)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{sort,jdbcType=INTEGER}, 
+      #{code,jdbcType=VARCHAR}, #{active,jdbcType=VARCHAR}, #{view,jdbcType=VARCHAR}, 
+      #{bannerclass,jdbcType=VARCHAR}, #{iconclass,jdbcType=VARCHAR}, #{siteid,jdbcType=VARCHAR}, 
+      #{info,jdbcType=VARCHAR}, #{addtime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="zhibi.cms.domain.SysCategory">
+    insert into sys_category
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="code != null">
+        code,
+      </if>
+      <if test="active != null">
+        active,
+      </if>
+      <if test="view != null">
+        view,
+      </if>
+      <if test="bannerclass != null">
+        bannerClass,
+      </if>
+      <if test="iconclass != null">
+        iconClass,
+      </if>
+      <if test="siteid != null">
+        siteid,
+      </if>
+      <if test="info != null">
+        info,
+      </if>
+      <if test="addtime != null">
+        addTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="code != null">
+        #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="active != null">
+        #{active,jdbcType=VARCHAR},
+      </if>
+      <if test="view != null">
+        #{view,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerclass != null">
+        #{bannerclass,jdbcType=VARCHAR},
+      </if>
+      <if test="iconclass != null">
+        #{iconclass,jdbcType=VARCHAR},
+      </if>
+      <if test="siteid != null">
+        #{siteid,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="addtime != null">
+        #{addtime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="zhibi.cms.domain.SysCategory">
+    update sys_category
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="code != null">
+        code = #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="active != null">
+        active = #{active,jdbcType=VARCHAR},
+      </if>
+      <if test="view != null">
+        view = #{view,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerclass != null">
+        bannerClass = #{bannerclass,jdbcType=VARCHAR},
+      </if>
+      <if test="iconclass != null">
+        iconClass = #{iconclass,jdbcType=VARCHAR},
+      </if>
+      <if test="siteid != null">
+        siteid = #{siteid,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        info = #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="addtime != null">
+        addTime = #{addtime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="zhibi.cms.domain.SysCategory">
+    update sys_category
+    set name = #{name,jdbcType=VARCHAR},
+      sort = #{sort,jdbcType=INTEGER},
+      code = #{code,jdbcType=VARCHAR},
+      active = #{active,jdbcType=VARCHAR},
+      view = #{view,jdbcType=VARCHAR},
+      bannerClass = #{bannerclass,jdbcType=VARCHAR},
+      iconClass = #{iconclass,jdbcType=VARCHAR},
+      siteid = #{siteid,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      addTime = #{addtime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

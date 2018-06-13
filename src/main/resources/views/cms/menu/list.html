@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<#include "../include/head.html"/>
+<body class="hold-transition skin-green sidebar-mini fixed">
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="content">
+            <div class="panel panel-success panel-intro">
+                <div class="panel-body">
+                    <div class="bootstrap-table">
+                        <form class="form-inline" action="">
+                        <@search labels=['菜单名'] names=['name']></@search>
+                            <div class="form-group">
+                                <div class="col-sm-12 text-center">
+                                    <button type="submit" class="btn btn-success">查询</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bs-bars pull-left" style="padding-top: 5px">
+                        <a class="btn btn-info" href="javascript:location.reload(true)"><i
+                                class="fa fa-refresh"></i></a>
+                        <a class="btn btn-success " href="${basePath}/cms/admin/menu/add"><i
+                                class="fa fa-plus"></i>&nbsp;添加</a>
+                    </div>
+                    <div class="fixed-table-container">
+                        <div class="fixed-table-header " style="overflow:scroll;white-space:nowrap;">
+                            <table class="table table-striped table-bordered table-hover" width="100%">
+                                <thead style="display: table-header-group;">
+                                <tr>
+                                    <th>名字</th>
+                                    <th>上级菜单</th>
+                                    <th>跳转地址</th>
+                                    <th>状态</th>
+                                    <th>排序</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <#if pageInfo??>
+                                    <#list pageInfo.list as item>
+                                    <tr>
+                                        <td>${item.name!}</td>
+                                        <td>${item.pName!}</td>
+                                        <td>${item.url!}</td>
+                                        <td>${item.status?switch(0,'禁用','启用')}</td>
+                                        <td>${item.sort!0}</td>
+                                        <td>
+                                            <a class="btn btn-info btn-xs"
+                                               href="${basePath}/cms/admin/menu/updateStatus/${item.id}">
+                                                <i class="fa fa-edit">&nbsp;${item.status?switch(0,'启用','禁用')}</i>
+                                            </a>
+                                            <a class="btn btn-success btn-xs"
+                                               href="${basePath}/cms/admin/menu/edit/${item.id}">
+                                                <i class="fa fa-edit">&nbsp;编辑</i>
+                                            </a>
+                                            <a class="btn btn-danger btn-xs"
+                                               href="javascript:if(confirm('确定要删除吗?')){location.href = '${basePath}/cms/admin/menu/del/${item.id}'}">
+                                                <i class="fa fa-trash">&nbsp;删除</i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </#list>
+                                <#else>
+                                <tr class="no-records-found">
+                                    <td colspan="6">没有找到匹配的记录</td>
+                                </tr>
+                                </#if>
+                                </tbody>
+                            </table>
+                        </div>
+                    <#include "../include/page.html"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="${basePath}/assets/js/app.js"></script>
+</html>

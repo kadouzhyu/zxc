@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zhibi.cms.mapper.SysWebsiteMapper">
+  <resultMap id="BaseResultMap" type="zhibi.cms.domain.SysWebsite">
+    <id column="siteid" jdbcType="VARCHAR" property="siteid" />
+    <result column="sitename" jdbcType="VARCHAR" property="sitename" />
+    <result column="sitedomain" jdbcType="VARCHAR" property="sitedomain" />
+    <result column="sitebeian" jdbcType="VARCHAR" property="sitebeian" />
+    <result column="sitestatus" jdbcType="INTEGER" property="sitestatus" />
+    <result column="ftlloc" jdbcType="VARCHAR" property="ftlloc" />
+    <result column="outputloc" jdbcType="VARCHAR" property="outputloc" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="slogan" jdbcType="VARCHAR" property="slogan" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="info" jdbcType="VARCHAR" property="info" />
+    <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="zhibi.cms.domain.SysWebsite">
+    <result column="adr" jdbcType="LONGVARCHAR" property="adr" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    siteid, sitename, sitedomain, sitebeian, sitestatus, ftlloc, outputloc, nickname, 
+    logo, slogan, tel, info, addtime
+  </sql>
+  <sql id="Blob_Column_List">
+    adr
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_website
+    where siteid = #{siteid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_website
+    where siteid = #{siteid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="zhibi.cms.domain.SysWebsite">
+    insert into sys_website (siteid, sitename, sitedomain, 
+      sitebeian, sitestatus, ftlloc, 
+      outputloc, nickname, logo, 
+      slogan, tel, info, 
+      addtime, adr)
+    values (#{siteid,jdbcType=VARCHAR}, #{sitename,jdbcType=VARCHAR}, #{sitedomain,jdbcType=VARCHAR}, 
+      #{sitebeian,jdbcType=VARCHAR}, #{sitestatus,jdbcType=INTEGER}, #{ftlloc,jdbcType=VARCHAR}, 
+      #{outputloc,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{logo,jdbcType=VARCHAR}, 
+      #{slogan,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, 
+      #{addtime,jdbcType=TIMESTAMP}, #{adr,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="zhibi.cms.domain.SysWebsite">
+    insert into sys_website
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="siteid != null">
+        siteid,
+      </if>
+      <if test="sitename != null">
+        sitename,
+      </if>
+      <if test="sitedomain != null">
+        sitedomain,
+      </if>
+      <if test="sitebeian != null">
+        sitebeian,
+      </if>
+      <if test="sitestatus != null">
+        sitestatus,
+      </if>
+      <if test="ftlloc != null">
+        ftlloc,
+      </if>
+      <if test="outputloc != null">
+        outputloc,
+      </if>
+      <if test="nickname != null">
+        nickname,
+      </if>
+      <if test="logo != null">
+        logo,
+      </if>
+      <if test="slogan != null">
+        slogan,
+      </if>
+      <if test="tel != null">
+        tel,
+      </if>
+      <if test="info != null">
+        info,
+      </if>
+      <if test="addtime != null">
+        addtime,
+      </if>
+      <if test="adr != null">
+        adr,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="siteid != null">
+        #{siteid,jdbcType=VARCHAR},
+      </if>
+      <if test="sitename != null">
+        #{sitename,jdbcType=VARCHAR},
+      </if>
+      <if test="sitedomain != null">
+        #{sitedomain,jdbcType=VARCHAR},
+      </if>
+      <if test="sitebeian != null">
+        #{sitebeian,jdbcType=VARCHAR},
+      </if>
+      <if test="sitestatus != null">
+        #{sitestatus,jdbcType=INTEGER},
+      </if>
+      <if test="ftlloc != null">
+        #{ftlloc,jdbcType=VARCHAR},
+      </if>
+      <if test="outputloc != null">
+        #{outputloc,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null">
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="logo != null">
+        #{logo,jdbcType=VARCHAR},
+      </if>
+      <if test="slogan != null">
+        #{slogan,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null">
+        #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="addtime != null">
+        #{addtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="adr != null">
+        #{adr,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="zhibi.cms.domain.SysWebsite">
+    update sys_website
+    <set>
+      <if test="sitename != null">
+        sitename = #{sitename,jdbcType=VARCHAR},
+      </if>
+      <if test="sitedomain != null">
+        sitedomain = #{sitedomain,jdbcType=VARCHAR},
+      </if>
+      <if test="sitebeian != null">
+        sitebeian = #{sitebeian,jdbcType=VARCHAR},
+      </if>
+      <if test="sitestatus != null">
+        sitestatus = #{sitestatus,jdbcType=INTEGER},
+      </if>
+      <if test="ftlloc != null">
+        ftlloc = #{ftlloc,jdbcType=VARCHAR},
+      </if>
+      <if test="outputloc != null">
+        outputloc = #{outputloc,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null">
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="logo != null">
+        logo = #{logo,jdbcType=VARCHAR},
+      </if>
+      <if test="slogan != null">
+        slogan = #{slogan,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null">
+        tel = #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null">
+        info = #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="addtime != null">
+        addtime = #{addtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="adr != null">
+        adr = #{adr,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where siteid = #{siteid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="zhibi.cms.domain.SysWebsite">
+    update sys_website
+    set sitename = #{sitename,jdbcType=VARCHAR},
+      sitedomain = #{sitedomain,jdbcType=VARCHAR},
+      sitebeian = #{sitebeian,jdbcType=VARCHAR},
+      sitestatus = #{sitestatus,jdbcType=INTEGER},
+      ftlloc = #{ftlloc,jdbcType=VARCHAR},
+      outputloc = #{outputloc,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      logo = #{logo,jdbcType=VARCHAR},
+      slogan = #{slogan,jdbcType=VARCHAR},
+      tel = #{tel,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      addtime = #{addtime,jdbcType=TIMESTAMP},
+      adr = #{adr,jdbcType=LONGVARCHAR}
+    where siteid = #{siteid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="zhibi.cms.domain.SysWebsite">
+    update sys_website
+    set sitename = #{sitename,jdbcType=VARCHAR},
+      sitedomain = #{sitedomain,jdbcType=VARCHAR},
+      sitebeian = #{sitebeian,jdbcType=VARCHAR},
+      sitestatus = #{sitestatus,jdbcType=INTEGER},
+      ftlloc = #{ftlloc,jdbcType=VARCHAR},
+      outputloc = #{outputloc,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      logo = #{logo,jdbcType=VARCHAR},
+      slogan = #{slogan,jdbcType=VARCHAR},
+      tel = #{tel,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      addtime = #{addtime,jdbcType=TIMESTAMP}
+    where siteid = #{siteid,jdbcType=VARCHAR}
+  </update>
+</mapper>

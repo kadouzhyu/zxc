@@ -1,0 +1,1 @@
+[WARN] 2018-04-26 16:02:08 - No mapping found for HTTP request with URI [/index] in DispatcherServlet with name 'dispatcherServlet'  [http-nio-8999-exec-4] [org.springframework.web.servlet.DispatcherServlet:1176] 

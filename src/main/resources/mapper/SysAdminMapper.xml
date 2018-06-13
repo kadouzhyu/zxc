@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zhibi.cms.mapper.SysAdminMapper">
+  <resultMap id="BaseResultMap" type="zhibi.cms.domain.SysAdmin">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="siteid" jdbcType="VARCHAR" property="siteid" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="lastloginip" jdbcType="VARCHAR" property="lastloginip" />
+    <result column="lastlogindate" jdbcType="TIMESTAMP" property="lastlogindate" />
+    <result column="info" jdbcType="VARCHAR" property="info" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, username, password, siteid, status, lastloginip, lastlogindate, info
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_admin
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sys_admin
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="zhibi.cms.domain.SysAdmin">
+    insert into sys_admin (id, username, password, 
+      siteid, status, lastloginip, 
+      lastlogindate, info)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{siteid,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{lastloginip,jdbcType=VARCHAR}, 
+      #{lastlogindate,jdbcType=TIMESTAMP}, #{info,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="zhibi.cms.domain.SysAdmin">
+    insert into sys_admin
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="username != null">
+        username,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="siteid != null">
+        siteid,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="lastloginip != null">
+        lastloginip,
+      </if>
+      <if test="lastlogindate != null">
+        lastlogindate,
+      </if>
+      <if test="info != null">
+        info,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="siteid != null">
+        #{siteid,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="lastloginip != null">
+        #{lastloginip,jdbcType=VARCHAR},
+      </if>
+      <if test="lastlogindate != null">
+        #{lastlogindate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="info != null">
+        #{info,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="zhibi.cms.domain.SysAdmin">
+    update sys_admin
+    <set>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="siteid != null">
+        siteid = #{siteid,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="lastloginip != null">
+        lastloginip = #{lastloginip,jdbcType=VARCHAR},
+      </if>
+      <if test="lastlogindate != null">
+        lastlogindate = #{lastlogindate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="info != null">
+        info = #{info,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="zhibi.cms.domain.SysAdmin">
+    update sys_admin
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      siteid = #{siteid,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      lastloginip = #{lastloginip,jdbcType=VARCHAR},
+      lastlogindate = #{lastlogindate,jdbcType=TIMESTAMP},
+      info = #{info,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

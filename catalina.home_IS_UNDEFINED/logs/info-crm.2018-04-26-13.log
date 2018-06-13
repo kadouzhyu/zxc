@@ -1,0 +1,8 @@
+[INFO] 2018-04-26 13:31:33 - Starting Application on WIN-FKVIAVD7KTQ with PID 6128 (E:\workspace\ewallet\yuhan\target\classes started by Administrator in E:\workspace\ewallet\yuhan)  [main] [org.springframework.boot.StartupInfoLogger:48] 
+[INFO] 2018-04-26 13:31:33 - No active profile set, falling back to default profiles: default  [main] [org.springframework.boot.SpringApplication:593] 
+[INFO] 2018-04-26 13:31:33 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5419a7e2: startup date [Thu Apr 26 13:31:33 CST 2018]; root of context hierarchy  [main] [org.springframework.context.support.AbstractApplicationContext:583] 
+[INFO] 2018-04-26 13:31:34 - HV000001: Hibernate Validator 5.3.5.Final  [background-preinit] [org.hibernate.validator.internal.util.Version:30] 
+[INFO] 2018-04-26 13:35:12 - Starting Application on WIN-FKVIAVD7KTQ with PID 9856 (E:\workspace\ewallet\yuhan\target\classes started by Administrator in E:\workspace\ewallet\yuhan)  [main] [org.springframework.boot.StartupInfoLogger:48] 
+[INFO] 2018-04-26 13:35:12 - No active profile set, falling back to default profiles: default  [main] [org.springframework.boot.SpringApplication:593] 
+[INFO] 2018-04-26 13:35:12 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7fde06bd: startup date [Thu Apr 26 13:35:12 CST 2018]; root of context hierarchy  [main] [org.springframework.context.support.AbstractApplicationContext:583] 
+[INFO] 2018-04-26 13:35:13 - HV000001: Hibernate Validator 5.3.5.Final  [background-preinit] [org.hibernate.validator.internal.util.Version:30] 

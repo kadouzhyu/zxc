@@ -1,0 +1,22 @@
+<div class="fixed-table-pagination">
+    <div class="pull-left pagination-detail">
+        <span class="pagination-info">总共 ${pageInfo.total} 条记录</span>
+    </div>
+    <div class="pull-right pagination">
+        <ul class="pagination">
+        <#if pageInfo.hasPreviousPage>
+            <li class="page-pre"><a href="${requestUrl}&pageNum=${pageInfo.prePage}">上一页</a></li>
+        </#if>
+
+        <#if pageInfo.pages gt 1>
+            <#list pageInfo.navigatepageNums as num>
+                <li <#if pageInfo.pageNum == num>class="active"</#if>>
+                    <a href="${requestUrl}&pageNum=${num}">${num}</a>
+                </li>
+            </#list> </#if>
+        <#if pageInfo.hasNextPage>
+            <li class="page-next"><a href="${requestUrl}&pageNum=${pageInfo.nextPage}">下一页</a></li>
+        </#if>
+        </ul>
+    </div>
+</div>

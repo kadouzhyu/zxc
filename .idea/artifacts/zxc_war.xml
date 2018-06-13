@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zxc:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="zxc-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zxc:war exploded" />
+    </root>
+  </artifact>
+</component>

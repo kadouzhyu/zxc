@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zhibi.cms.mapper.SysBbsMapper">
+  <resultMap id="BaseResultMap" type="zhibi.cms.domain.SysBbs">
+    <id column="bid" jdbcType="INTEGER" property="bid" />
+    <result column="bname" jdbcType="VARCHAR" property="bname" />
+    <result column="btelephone" jdbcType="VARCHAR" property="btelephone" />
+    <result column="bemail" jdbcType="VARCHAR" property="bemail" />
+    <result column="sited" jdbcType="VARCHAR" property="sited" />
+    <result column="addTime" jdbcType="TIMESTAMP" property="addtime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="zhibi.cms.domain.SysBbs">
+    <result column="bcontent" jdbcType="LONGVARCHAR" property="bcontent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    bid, bname, btelephone, bemail, sited, addTime
+  </sql>
+  <sql id="Blob_Column_List">
+    bcontent
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from sys_bbs
+    where bid = #{bid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sys_bbs
+    where bid = #{bid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="zhibi.cms.domain.SysBbs">
+    insert into sys_bbs (bid, bname, btelephone, 
+      bemail, sited, addTime, 
+      bcontent)
+    values (#{bid,jdbcType=INTEGER}, #{bname,jdbcType=VARCHAR}, #{btelephone,jdbcType=VARCHAR}, 
+      #{bemail,jdbcType=VARCHAR}, #{sited,jdbcType=VARCHAR}, #{addtime,jdbcType=TIMESTAMP}, 
+      #{bcontent,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="zhibi.cms.domain.SysBbs">
+    insert into sys_bbs
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="bid != null">
+        bid,
+      </if>
+      <if test="bname != null">
+        bname,
+      </if>
+      <if test="btelephone != null">
+        btelephone,
+      </if>
+      <if test="bemail != null">
+        bemail,
+      </if>
+      <if test="sited != null">
+        sited,
+      </if>
+      <if test="addtime != null">
+        addTime,
+      </if>
+      <if test="bcontent != null">
+        bcontent,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="bid != null">
+        #{bid,jdbcType=INTEGER},
+      </if>
+      <if test="bname != null">
+        #{bname,jdbcType=VARCHAR},
+      </if>
+      <if test="btelephone != null">
+        #{btelephone,jdbcType=VARCHAR},
+      </if>
+      <if test="bemail != null">
+        #{bemail,jdbcType=VARCHAR},
+      </if>
+      <if test="sited != null">
+        #{sited,jdbcType=VARCHAR},
+      </if>
+      <if test="addtime != null">
+        #{addtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bcontent != null">
+        #{bcontent,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="zhibi.cms.domain.SysBbs">
+    update sys_bbs
+    <set>
+      <if test="bname != null">
+        bname = #{bname,jdbcType=VARCHAR},
+      </if>
+      <if test="btelephone != null">
+        btelephone = #{btelephone,jdbcType=VARCHAR},
+      </if>
+      <if test="bemail != null">
+        bemail = #{bemail,jdbcType=VARCHAR},
+      </if>
+      <if test="sited != null">
+        sited = #{sited,jdbcType=VARCHAR},
+      </if>
+      <if test="addtime != null">
+        addTime = #{addtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="bcontent != null">
+        bcontent = #{bcontent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where bid = #{bid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="zhibi.cms.domain.SysBbs">
+    update sys_bbs
+    set bname = #{bname,jdbcType=VARCHAR},
+      btelephone = #{btelephone,jdbcType=VARCHAR},
+      bemail = #{bemail,jdbcType=VARCHAR},
+      sited = #{sited,jdbcType=VARCHAR},
+      addTime = #{addtime,jdbcType=TIMESTAMP},
+      bcontent = #{bcontent,jdbcType=LONGVARCHAR}
+    where bid = #{bid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="zhibi.cms.domain.SysBbs">
+    update sys_bbs
+    set bname = #{bname,jdbcType=VARCHAR},
+      btelephone = #{btelephone,jdbcType=VARCHAR},
+      bemail = #{bemail,jdbcType=VARCHAR},
+      sited = #{sited,jdbcType=VARCHAR},
+      addTime = #{addtime,jdbcType=TIMESTAMP}
+    where bid = #{bid,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<#include "../include/head.html"/>
+<body class="hold-transition skin-green sidebar-mini fixed">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="content">
+        <form class="form-horizontal" method="POST" action="${basePath}/cms/admin/article/update" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="${article.id}">
+        <@editForm labels=['标题'] names=['title'] model=article></@editForm>
+            <div class="form-group">
+                <label class="control-label col-sm-2">所属栏目</label>
+                <div class=" col-sm-8 ">
+                    <select class="form-control" name="siteid">
+                    <#list siteList as item>
+                        <option <#if item.id == article.siteid>selected</#if> value="${item.id}">${item.name!}</option>
+                    </#list>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">排序</label>
+                <div class=" col-sm-8 ">
+                    <input type="number" min="0" value="${article.sort!0}" class="form-control" name="sort" required>
+                </div>
+            </div>
+            <div class="form-group has-info">
+                <label class="col-xs-12 col-sm-2 control-label no-padding-right">展示图</label>
+                <div class="col-sm-8 ">
+                    <input type="file" name="file" id="icon" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">简介</label>
+                <div class=" col-sm-8 ">
+                    <textarea class="form-control" name="descript" required>${article.descript!}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">内容</label>
+                <div class=" col-sm-8 ">
+                    <textarea class="form-control" id="editor" name="content" style="width: 100%;" >${article.content!}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2"></label>
+                <div class="col-xs-12 col-sm-8">
+                    <button type="submit" class="btn btn-success btn-embossed">确定</button>
+                    <button type="reset" class="btn btn-default btn-embossed">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="${basePath}/assets/js/app.js"></script>
+<script>
+    KindEditor.ready(function (K) {
+        window.editor = K.create("#editor", {
+            uploadJson: '/file/uploadFile',
+            fileManagerJson: '',
+            allowFileManager: false
+        });
+    });
+
+    uploadFile("icon", "${basePath}${article.showpic!}");
+</script>
+</html>

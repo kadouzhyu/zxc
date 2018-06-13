@@ -1,0 +1,714 @@
+.topSpaceHolder {
+
+	margin: 0px;
+
+	padding:0px;
+
+	background: #FFFFFF url("../en/pub/global_images/q1Bg_2-2_top.jpg")/*tpa=http://www.cethl.com/en/pub/global_images/q1Bg_2-2_top.jpg*/ no-repeat left top;
+
+	height: 27px;
+
+}
+
+.topSpaceHolderFR {
+
+	margin: 0px;
+
+	padding:0px;
+
+	background: #FFFFFF url("../en/pub/global_images/q1Bg_2-2_top.jpg")/*tpa=http://www.cethl.com/en/pub/global_images/q1Bg_2-2_top.jpg*/ no-repeat left top;
+
+	height: 27px;
+
+}
+
+.topLinks {
+
+	height: 27px;
+
+	font: 10px Arial, Helvetica, sans-serif;
+
+	margin: 0px;
+
+	padding:10px 0px 0px;
+
+	background: #FFFFFF no-repeat left top;
+
+}
+
+#headerBg img { border-style: none; }
+
+.topLinks ul {
+
+	z-index:100;
+
+	margin: 0;
+
+	padding: 0;
+
+	list-style-type: none;
+
+}
+
+.topLinks ul li {
+
+	position: relative;
+
+	display: inline;
+
+	float: left;
+
+}
+
+.topLinks ul li a {
+
+	display: block; /*background of menu items (default state)*/
+
+	padding: 0px 7px;
+
+	color: #2d2b2b;
+
+	text-decoration: none;
+
+}
+
+.topLinks ul li a:link, .topLinks ul li a:visited {
+
+	color: #666666;
+
+}
+
+.topLinks ul li a:hover {
+
+	background: black; /*background of menu items during onmouseover (hover state)*/
+
+	color: white;
+
+}
+
+.topLinksFR {
+
+	height: 18px;
+
+	font: 9px Arial, Helvetica, sans-serif;
+
+	margin: 0px;
+
+	padding:14px 0px 0px 0px;
+
+	background: #FFFFFF no-repeat left top;
+
+}
+
+.topLinksFR ul {
+
+	z-index:100;
+
+	margin: 0;
+
+	padding: 0;
+
+	list-style-type: none;
+
+}
+
+.topLinksFR ul li {
+
+	position: relative;
+
+	display: inline;
+
+	float: left;
+
+}
+
+.topLinksFR ul li a {
+
+	display: block; /*background of menu items (default state)*/
+
+	padding: 0px 5px;
+
+	color: #2d2b2b;
+
+	text-decoration: none;
+
+}
+
+.topLinksFR ul li a:link, .topLinksFR ul li a:visited {
+
+	color: #666666;
+
+}
+
+.topLinksFR ul li a:hover {
+
+	background: black; /*background of menu items during onmouseover (hover state)*/
+
+	color: white;
+
+}
+
+#headerBg {
+
+	background: #FFFFFF url("../en/pub/global_images/q1Bg_2-2.jpg")/*tpa=http://www.cethl.com/en/pub/global_images/q1Bg_2-2.jpg*/ no-repeat left top;
+
+
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+#headerBgFR {
+
+	background: #FFFFFF url("../fr/pub/global_images/q1Bg_2-2.jpg")/*tpa=http://www.cethl.com/fr/pub/global_images/q1Bg_2-2.jpg*/ no-repeat left top;
+
+	
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+.ddsmoothmenu {
+
+	background: url("../en/pub/global_images/zNavBarBg.jpg")/*tpa=http://www.cethl.com/en/pub/global_images/zNavBarBg.jpg*/ no-repeat;
+
+	font: bold 12px Arial, Helvetica, sans-serif;
+
+	width:941px;
+
+	height: 38px;
+
+}
+
+.ddsmoothmenu ul {
+
+	z-index:100;
+
+	margin: 0px;
+
+	padding: 0px;
+
+	list-style-type: none;
+
+	
+
+}
+
+/*Top level list items*/
+
+.ddsmoothmenu ul li {
+
+	position: relative;
+
+	display: inline;
+
+	float: left; /*background of menu bar (default state)*/
+
+	text-align: center;
+
+	background: url("../en/pub/global_images/mainNavDivider.png")/*tpa=http://www.cethl.com/en/pub/global_images/mainNavDivider.png*/ no-repeat left;
+
+}
+
+/*Top level menu link items style*/
+
+.ddsmoothmenu ul li a {
+
+	display: block; /*background of menu items (default state)*/
+
+	color: #EEEEEE;
+
+	text-decoration: none;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+
+
+	font-weight: bold;
+
+}
+
+* html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+
+	display: inline-block;
+
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited {
+
+	color: #666666;
+
+}
+
+.ddsmoothmenu ul li a:hover {
+
+	background: #A6CE39; /*background of menu items during onmouseover (hover state)*/
+
+	color: #FFFFFF;
+
+}
+
+.ddsmoothmenu ul li ul li ul li a:hover {
+
+	background: #A6CE39; /*background of menu items during onmouseover (hover state)*/
+
+	color: #FFFFFF;
+
+}
+
+/*1st sub level menu*/
+
+.ddsmoothmenu ul li ul {
+
+	position: absolute;
+
+	display: none; /*collapse all sub menus to begin with*/
+
+	visibility: hidden;
+
+	background: #ffffff;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+
+.ddsmoothmenu ul li ul li {
+
+	display: list-item;
+
+	float: none;
+
+	text-align: left;
+
+	font-size: 11px;
+
+	text-transform: none;
+
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+
+.ddsmoothmenu ul li ul li ul {
+
+	top: 0;
+
+	background: #fffff;
+
+	
+
+}
+
+/* Sub level menu links style */
+
+.ddsmoothmenu ul li ul li a {
+
+	font: bold 12px Arial, Helvetica, sans-serif;
+
+	width: 100%; /*width of sub menus*/
+
+	padding-top: 6px;
+
+	padding-bottom: 6px;
+
+	margin: 0;
+
+	border-top-width: 0;
+
+	text-indent: 15px;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dotted;
+
+	border-bottom-color: #CCCCCC;
+
+}
+
+.ddsmoothmenu ul li ul li ul li a {
+
+	font: bold 12px Arial, Helvetica, sans-serif;
+
+	width: 100%; /*width of sub menus*/
+
+	margin: 0;
+
+	border-top-width: 0;
+
+	border-bottom: 1px dotted ##CCCCCC;
+
+    text-indent: 15px;
+
+	padding-top: 6px;
+
+	padding-bottom: 6px;
+
+	
+
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+
+
+.downarrowclass {
+
+	position: absolute;
+
+	top: 1px;
+
+	right:1px;
+
+}
+
+.rightarrowclass {
+
+	position: absolute;
+
+	top: 1px;
+
+	right: 1px;
+
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+
+
+.ddshadow {
+
+	position: absolute;
+
+	left: 0;
+
+	top: 0;
+
+	width: 0;
+
+	height: 0;
+
+}
+
+.toplevelshadow { /*shadow opacity. Doesn't work in IE*/
+
+	opacity: 0.4;
+
+}
+
+
+
+.ddsmoothmenu .home {
+
+	width: 91px;
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+}
+
+.ddsmoothmenu .about {
+
+	width:120px;
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+}
+
+.ddsmoothmenu .care {
+
+	width: 120px;
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+}
+
+.ddsmoothmenu .press {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	width: 120px;
+
+}
+
+.ddsmoothmenu .ir {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	width: 132px;
+
+}
+
+.ddsmoothmenu .cope {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	width: 121px;
+
+}
+
+.ddsmoothmenu .careers {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	width: 120px;
+
+}
+
+.ddsmoothmenu .contact {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	width: 116px;
+
+}
+
+
+
+.style1 {
+
+	color: #3399cc;
+
+}
+
+.styleBlue {
+
+	color: #3399cc;
+
+	font-size: 12px;
+
+}
+
+
+
+
+
+/* ######### CSS classes applied to French navigation  ######### */
+
+
+
+.ddsmoothmenuFR {
+
+	background: url("../en/pub/global_images/zNavBarBg.jpg")/*tpa=http://www.cethl.com/en/pub/global_images/zNavBarBg.jpg*/ no-repeat;
+
+	font: bold 12px "Arial Narrow", Arial, Helvetica, sans-serif;
+
+	width: 100%;
+
+	text-transform: uppercase;
+
+	height: 31px;
+
+}
+
+.ddsmoothmenuFR ul {
+
+	z-index:100;
+
+	margin: 0px;
+
+	padding: 0px;
+
+	list-style-type: none;
+
+}
+
+/*Top level list items*/
+
+.ddsmoothmenuFR ul li {
+
+	position: relative;
+
+	display: inline;
+
+	float: left; /*background of menu bar (default state)*/
+
+	text-align: center;
+
+	background: url("../en/pub/global_images/mainNavDivider.png")/*tpa=http://www.cethl.com/en/pub/global_images/mainNavDivider.png*/ no-repeat left;
+
+}
+
+/*Top level menu link items style*/
+
+.ddsmoothmenuFR ul li a {
+
+	font: bold 12px "Arial Narrow", Arial, Helvetica, sans-serif;
+
+	display: block; /*background of menu items (default state)*/
+
+	color: #EEEEEE;
+
+	padding: 0px
+
+	text-decoration: none;
+
+}
+
+* html .ddsmoothmenuFR ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+
+	display: inline-block;
+
+}
+
+.ddsmoothmenuFR ul li a:link, .ddsmoothmenuFR ul li a:visited {
+
+	color: #EEEEEE;
+
+}
+
+.ddsmoothmenuFR ul li a:hover {
+
+	background: black; /*background of menu items during onmouseover (hover state)*/
+
+	color: white;
+
+}
+
+.ddsmoothmenuFR ul li ul li ul li a:hover {
+
+	background: black; /*background of menu items during onmouseover (hover state)*/
+
+	color: #3399CC;
+
+}
+
+/*1st sub level menu*/
+
+.ddsmoothmenuFR ul li ul {
+
+	position: absolute;
+
+	left: 0;
+
+	display: none; /*collapse all sub menus to begin with*/
+
+	visibility: hidden;
+
+	background: #7b7a6c;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+
+.ddsmoothmenuFR ul li ul li {
+
+	display: list-item;
+
+	float: none;
+
+	text-align: left;
+
+	font-size: 11px;
+
+	text-transform: none;
+
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+
+.ddsmoothmenuFR ul li ul li ul {
+
+	top: 0;
+
+	background: black;
+
+}
+
+/* Sub level menu links style */
+
+.ddsmoothmenuFR ul li ul li a {
+
+	font: bold 11px Arial, Helvetica, sans-serif;
+
+	width: 100%; /*width of sub menus*/
+
+	padding: 6px;
+
+	margin: 0;
+
+	border-top-width: 0;
+
+	border-bottom: 1px dotted #515151;
+
+}
+
+
+
+.style2FR {
+
+	color: #3399cc;
+
+	font-size: 12px;
+
+}
+
+   
+
+.ddsmoothmenuFR .aaFR {
+
+	width: 152px;
+
+	margin-left: 12px;
+
+}
+
+.ddsmoothmenuFR .iaFR {
+
+	width: 105px;
+
+	margin-left: 1px;
+
+}
+
+.ddsmoothmenuFR .pricesFR {
+
+	width: 152px;
+
+	margin-left: 1px;
+
+}
+
+.ddsmoothmenuFR .prodsFR {
+
+	width: 155px;
+
+	margin-left: 1px;
+
+}
+
+.ddsmoothmenuFR .ratesFR {
+
+	width: 52px;
+
+	margin-left: 1px;
+
+}
+
+.ddsmoothmenuFR .toolsFR {
+
+	width: 160px;
+
+	margin-left: 1px;
+
+}
+

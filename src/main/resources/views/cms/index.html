@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<#include "include/head.html"/>
+<body class="hold-transition skin-green sidebar-mini fixed" id="tabs">
+<#include "include/header.html"/>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!--如果想始终显示子菜单,则给ul加上show-submenu类即可-->
+        <ul class="sidebar-menu">
+            <li class="header">操作菜单</li>
+
+            <li class="active">
+                <a href="${basePath}/cms/admin/welcome" addtabs="000" url="${basePath}/cms/admin/welcome" py="sy" pinyin="shouye">
+                    <i class="fa fa-dashboard"></i> <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="${basePath}/cms/admin/menu/list" addtabs="100" url="${basePath}/cms/admin/menu/list" py="cdgl" pinyin="kongzhitai">
+                    <i class="fa fa-list"></i> <span>菜单管理</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="${basePath}/cms/admin/article/list" addtabs="200" url="${basePath}/cms/admin/article/list" py="wzgl" pinyin="wenzhangguabli">
+                    <i class="fa fa-file-text-o"></i> <span>文章管理</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="${basePath}/cms/admin/site/list" addtabs="300" url="${basePath}/cms/admin/site/list" py="lmgl" pinyin="lanmuguanli">
+                    <i class="fa fa-cogs"></i> <span>栏目管理</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="${basePath}/cms/admin/pic/list" addtabs="400" url="${basePath}/cms/admin/pic/list" py="tpgl" pinyin="tupianguali">
+                    <i class="fa fa-file-image-o"></i> <span>图片管理</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="${basePath}/cms/admin/webpage/list" addtabs="500" url="${basePath}/cms/admin/webpage/list" py="wynr" pinyin="wangyeneirong">
+                    <i class="fa fa-file-code-o"></i> <span>网页内容管理</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
+<div class="content-wrapper tab-content tab-addtabs" style="min-height: 500px!important;"></div>
+<!-- /.content-wrapper -->
+<#include "include/footer.html"/>
+<!-- ./wrapper -->
+<!-- end main content -->
+</body>
+<script src="${basePath}/assets/js/app.js"></script>
+<script>
+    $("li[class='active'] a").click();
+</script>
+</html>

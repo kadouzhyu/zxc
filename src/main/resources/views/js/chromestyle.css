@@ -1,0 +1,91 @@
+.chromestyle {
+	width: 1006px;
+	padding:0px;
+	font-size: 11px;
+	font-family: verdana, geneva, sans-serif;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0px;
+	content: ".";
+}
+.chromestyle:unknown {
+
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+
+}
+
+.chromestyle UL {
+
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: left
+
+}
+
+.chromestyle UL LI {
+
+	DISPLAY: inline
+
+}
+
+.chromestyle UL LI A {
+
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0px; TEXT-DECORATION: none
+
+}
+
+.chromestyle UL LI A:hover {
+
+	
+
+}
+
+.chromestyle UL LI A[rel]:unknown {
+
+	content: ""
+
+}
+
+.dropmenudiv {
+	background-image: url("../img/overbg.png")/*tpa=http://www.cethl.com/img/overbg.png*/; 
+	z-index: 200; 
+	position: absolute; 
+	font: 11px/18px verdana; 
+	visibility: hidden; 
+	color: #363636; 
+	top: 10px; 
+	left: 10px;
+	right: 10px;
+	margin-left: 0px; 
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	margin-right: 0px; 
+	BORDER-TOP: #cecece 1px solid;
+	BORDER-RIGHT: #cecece 1px solid;
+	BORDER-LEFT: #cecece 1px solid; 
+	BORDER-BOTTOM: #cecece 1px solid;
+	
+
+}
+.dropmenudiv a {
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	padding-right: 0px;
+	display: block;
+	padding-left: 20px;
+	padding-right: 14px;
+	padding-bottom: 5px;
+	width: auto;
+	color: #363636;
+	text-indent: 0px;
+	padding-top: 5px;
+	text-decoration: none;
+	BORDER-BOTTOM: #cecece 1px dotted;
+	background-color: #FFFFFF;
+}
+
+* html .dropmenudiv a {
+	width: 100%
+}
+.dropmenudiv a:hover {
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color: #ff6600; 
+}

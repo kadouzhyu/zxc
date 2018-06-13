@@ -1,0 +1,11 @@
+<#macro search labels names>
+    <#list labels as item>
+    <div class="form-group" style="margin: 6px">
+        <label class="control-label">${item}</label>
+        <#assign name = names[item?index]/>
+        <input type="text" class="form-control "
+               name="${name}" value="${Request[name]!}"
+               placeholder="${item}">
+    </div>
+    </#list>
+</#macro>

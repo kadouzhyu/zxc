@@ -1,0 +1,3186 @@
+input.a02 {
+
+	BACKGROUND-POSITION: left top;
+
+	FONT-SIZE: 9pt;
+
+	BORDER-TOP: #c4c3c3 2px solid;
+
+	BORDER-RIGHT: #c4c3c3 2px solid;
+
+	BORDER-LEFT: #c4c3c3 2px solid; 
+
+	BORDER-BOTTOM: #c4c3c3 2px solid;
+
+	BACKGROUND: #fff;
+
+	}
+
+
+
+
+
+body {
+
+	margin-top: 0px;
+
+	margin-left: 0px;
+
+	margin-right: 0px;
+
+	background-color: #ffffff;
+
+	margin-bottom: 15px;
+
+	background-image: url("../img/bgbg.gif")/*tpa=http://www.cethl.com/img/bgbg.gif*/;
+
+	background-repeat: repeat-x;
+
+	font-family: "宋体";
+
+	color: #333333;
+
+	 
+
+	
+
+}
+
+.kk {
+
+	height: 17px;
+
+	width: 192px;
+
+	border: 1px solid #CCCCCC;
+
+	font-family:"宋体";	font-size: 12px;
+
+	color: #cccccc;
+
+}
+
+.top_en {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+}
+
+.top_en:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.top_en:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.top_en:hover {
+
+	color: #709114;
+
+}
+
+.textTable_new_B{
+
+	border: 1px solid #ddd9d9;
+
+	padding: 8px;
+
+}
+
+
+
+.border_index_ir {
+
+	font-size: 11px;
+
+	color: #666666;
+
+	padding-left: 6px;
+
+	padding-top: 3px;
+
+	padding-bottom: 2px;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #c2c2c2;
+
+	line-height: 18px;
+
+}
+
+
+
+.border_index_info {
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #c2c2c2;
+
+}
+
+
+
+.bg_index_ir {
+
+	background-image: url("../img/index_ir_bg.gif")/*tpa=http://www.cethl.com/img/index_ir_bg.gif*/;
+
+	background-repeat: repeat-x;
+
+	background-position: top;
+
+}
+
+
+
+.bg_location {
+
+	background-image: url("../img/location_bg.gif")/*tpa=http://www.cethl.com/img/location_bg.gif*/;
+
+	background-repeat: repeat-x;
+
+	background-position: bottom;
+
+}
+
+
+
+.bg_menu {
+
+	background-image: url("../img/mu_bg.gif")/*tpa=http://www.cethl.com/img/mu_bg.gif*/;
+
+	background-repeat: repeat-x;
+
+	background-position: top;
+
+	padding-bottom: 100px;
+
+}
+
+
+
+.header_date {
+
+	color: #962e45;
+
+	font-family: "宋体";
+
+	font-size: 20px;
+
+	line-height: 25px;
+
+	font-weight: bold;
+
+	text-indent: 12px;
+
+}
+
+
+
+.header_date_2 {
+
+	color: #0863AD;
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	font-weight: bold;
+
+	text-indent: 12px;
+
+}
+
+.textTable {
+
+	FONT-SIZE: 13px;
+
+	COLOR: #000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family:Ш蔨, sans-serif;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #DDD;
+
+	padding: 5px;
+
+}
+
+
+
+
+
+.textTable_subordinate{
+
+	FONT-SIZE: 12px;
+
+	COLOR: #000000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family: "宋体";
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dotted;
+
+	border-bottom-color: #CCCCCC;
+
+	padding-top: 4px;
+
+	padding-bottom: 4px;
+
+	border-top-width: 1px;
+
+	border-top-style: dotted;
+
+	border-top-color: #CCC;
+
+	padding-left: 6px;
+
+}
+
+
+
+.textTable_submenu{
+
+	padding-top: 2px;
+
+	padding-bottom: 2px;
+
+}
+
+
+
+
+
+.textTable_index_ir {
+
+	border-top-width: 1px;
+
+	border-top-style: solid;
+
+	border-top-color: #d9d9d9;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #d9d9d9;
+
+	border-left-width: 1px;
+
+	border-left-style: solid;
+
+	border-left-color: #d9d9d9;
+
+	border-right-width: 1px;
+
+	border-right-style: solid;
+
+	border-right-color: #d9d9d9;
+
+	padding-left: 12px;
+
+	padding-top: 9px;
+
+	padding-bottom: 9px;
+
+	padding-right: 12px;
+
+}
+
+
+
+
+
+.textTable_report {
+
+	FONT-SIZE: 12px;
+
+	COLOR: #000000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family: "宋体";
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #d0e4e1;
+
+}
+
+
+
+.textTable_info {
+
+	FONT-SIZE: 13px;
+
+	COLOR: #333333;
+
+	LINE-HEIGHT: 22px;
+
+	font-family: "宋体";
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dotted;
+
+	border-bottom-color: #d5d5d5;
+
+	padding-top: 4px;
+
+	padding-right: 0px;
+
+	padding-bottom: 4px;
+
+	padding-left: 0px;
+
+}
+
+
+
+.sidemenutextTable {
+
+	font-family: "宋体";
+
+	border-top-width: 1px;
+
+	border-top-style: solid;
+
+	border-top-color: #e0dbce;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #e0dbce;
+
+
+
+}
+
+
+
+
+
+
+
+.background_right {
+
+
+
+	background-image: url("../img/bg_right.gif")/*tpa=http://www.cethl.com/img/bg_right.gif*/;
+
+	background-repeat: no-repeat;
+
+	background-position: top;
+
+}
+
+
+
+.background_left {
+
+
+
+	background-image: url("../img/bg_left.gif")/*tpa=http://www.cethl.com/img/bg_left.gif*/;
+
+	background-repeat: no-repeat;
+
+	background-position: top;
+
+}
+
+
+
+.text_highlight {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 30px;
+
+}
+
+
+
+.text {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+	text-align: justify;
+
+}
+
+
+.text_number {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+	text-align: justify;
+
+}
+
+
+
+
+.text_calendar {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+		display:block;
+
+	color: #000;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+	padding-right: 5px;
+
+}
+
+.text_calendar2 {
+
+	font-family: "宋体";
+
+	font-size: 11px;
+
+	color: #000;
+
+	text-decoration: none;
+
+	line-height: 15px;
+
+	padding-right: 5px;
+
+}
+
+
+
+.text_calendar3 {
+
+	font-family: "宋体";
+
+	font-size: 11px;
+
+	color: #000;
+
+	text-decoration: none;
+
+	line-height: 15px;
+
+	padding-left: 5px;
+
+}
+
+
+
+.text_index {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333;
+
+	text-decoration: none;
+
+	line-height: 21px;
+
+	text-align: justify;
+
+}
+
+
+
+
+
+.text_g {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #299482;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+	text-align: justify;
+
+}
+
+
+
+.text_grey {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #962e45;
+
+	text-decoration: none;
+
+	line-height: 27px;
+
+}
+
+
+
+
+
+.text_red {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #cc0000;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+	text-align: justify;
+
+}
+
+
+
+.text_blue {
+
+	font-family: "宋体";	font-size: 12px;
+
+	color: #0863c9;
+
+	text-decoration: none;
+
+	line-height: 17px;
+
+}
+
+
+
+
+
+.text_ir {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333;
+
+	text-decoration: none;
+
+	line-height: 25px;
+
+	text-align: justify;
+
+	padding-left: 11px;
+
+	padding-right: 11px;
+
+}
+
+
+
+.text_stock {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333;
+
+	text-decoration: none;
+
+	line-height: 28px;
+
+	text-align: justify;
+
+}
+
+
+
+
+
+.text_white {
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	font-size: 11px;
+
+	color: #fff;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.text_nojustify {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+}
+
+
+
+.text_link	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #666666;
+
+	text-decoration: none;
+
+	line-height: 15px;
+
+}
+
+
+
+.lxtext_link	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #666666;
+
+	text-decoration: none;
+
+	line-height: 15px;
+
+}
+
+.lxtext_link:link	{
+
+	color: #666666;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_link:visited{
+
+	color: #666666;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_link:hover {
+
+	color: #cc0000;
+
+}
+
+
+
+
+
+.text_history {
+
+	color: #962e45;
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	line-height: 25px;
+
+	font-weight: bold;
+
+}
+
+
+
+.text_history2 {
+
+	color: #962e45;
+
+	font-family: "宋体";
+
+	font-size: 17px;
+
+	line-height: 25px;
+
+	font-weight: bold;
+
+}
+
+
+
+.text_stock_b {
+
+	color: #299482;
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	line-height: 18px;
+
+	font-weight: bold;
+
+}
+
+
+
+
+
+.lxtext_history	{
+
+	color: #858585;
+
+	font-family: "宋体";
+
+	font-size: 20px;
+
+	line-height: 25px;
+
+	font-weight: bold;
+
+	text-indent: 12px;
+
+	text-decoration: none;
+
+
+
+}
+
+.lxtext_history:link	{
+
+	color: #858585;
+
+	font-family: "宋体";
+
+	font-size: 20px;
+
+	line-height: 25px;
+
+	font-weight: bold;
+
+	text-indent: 12px;
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.lxtext_history:visited{
+
+	color: #858585;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_history:hover {
+
+	color: #858585;
+
+	font-family: "宋体";
+
+	font-size: 26px;
+
+	line-height: 25px;
+
+	font-weight: bold;
+
+	text-indent: 12px;
+
+	text-decoration: none;
+
+}
+
+.lxtext_nojustify	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #424242;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+}
+
+.lxtext_nojustify:link	{
+
+	color: #424242;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_nojustify:visited{
+
+	color: #424242;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_nojustify:hover {
+
+	color: #709114;
+
+}
+
+
+
+table {
+
+	padding:0px;
+
+	border-collapse: collapse;
+
+
+
+}
+
+td{
+
+	font-family: "宋体";
+
+	font-size:12px;
+
+}
+
+.textB {
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+}
+
+.textB_o {
+
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+}
+
+.textB:link {
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+	text-decoration: none
+
+}
+
+.textB:visited {
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+	text-decoration: none
+
+}
+
+.textB:hover {
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+	text-decoration: none
+
+}
+
+
+
+.textB_blue {
+
+	font-family: "宋体";
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #005bac;
+
+}
+
+
+
+.lxtext_more	{
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #0066cc
+
+}
+
+.lxtext_more:link	{
+
+	color: #0066cc;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_more:visited{
+
+	color: #0066cc;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_more:hover {
+
+	color: #962e45;
+
+	text-decoration: none
+
+}
+
+
+
+
+
+.lxtext_more_02	{
+
+	font-family: "宋体";	font-size: 12px;
+
+	color: #0863ba;
+
+	line-height: 18px;
+
+	text-decoration: none
+
+}
+
+.lxtext_more_02:link	{
+
+	color: #0863ba;
+
+	text-decoration: underline
+
+}
+
+
+
+.lxtext_more_02:visited{
+
+	color: #0863ba;
+
+	text-decoration: underline
+
+}
+
+
+
+.lxtext_more_02:hover {
+
+	color: #ff6600;
+
+	line-height: 18px;
+
+	text-decoration: none
+
+}
+
+
+
+
+
+.lxtext	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+	text-align: justify;
+
+}
+
+.lxtext:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext:hover {
+
+	color: #709114;
+
+}
+
+
+.lxtext01	{
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+	text-align: justify;
+
+}
+
+.lxtext01:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext01:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext01:hover {
+
+	color: #709114;
+
+}
+
+
+
+.lxtext_white	{
+
+	font-family: "宋体";	font-size: 12px;
+
+	color: #fff;
+
+	text-decoration: none;
+
+	line-height: 26px;
+
+	text-align: justify;
+
+}
+
+.lxtext_white:link	{
+
+	color: #fff;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_white:visited{
+
+	color: #fff;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_white:hover {
+
+	color: #ff6600;
+
+}
+
+
+
+
+
+.lxtext_index	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+}
+
+.lxtext_index:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_index:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_index:hover {
+
+	color: #709114;
+
+}
+
+
+
+
+
+.lxtext_index_ir	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #006699;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+}
+
+.lxtext_index_ir:link	{
+
+	color: #006699;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_index_ir:visited{
+
+	color: #006699;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_index_ir:hover {
+
+	color: #709114;
+
+}
+
+
+
+
+
+
+
+.text_location	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #cccccc;
+
+	text-decoration: none;
+
+	line-height: 31px;
+
+}
+
+
+
+.text_location_02	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #8e8985;
+
+	text-decoration: none;
+
+	line-height: 31px;
+
+}
+
+
+
+.lxtext_location	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #8e8985;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+}
+
+.lxtext_location:link	{
+
+	color: #8e8985;
+
+	text-decoration: none;
+
+}
+
+
+
+.lxtext_location:visited{
+
+	color: #8e8985;
+
+	text-decoration: none;
+
+}
+
+
+
+.lxtext_location:hover {
+
+	color: #709114;
+
+	text-decoration: none;
+
+}
+
+
+
+.lxtext_sidemenu	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+	text-align: justify;
+
+
+
+}
+
+.lxtext_sidemenu:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_sidemenu:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_sidemenu:hover {
+
+	color: #c41b20;
+
+}
+
+
+
+
+
+.lxtext_sidemenu_sub	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #7c7c7c;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+	text-align: justify;
+
+
+
+}
+
+.lxtext_sidemenu_sub:link	{
+
+	color: #666666;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_sidemenu_sub:visited{
+
+	color: #666666;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_sidemenu_sub:hover {
+
+	color: #c41b20;
+
+}
+
+
+
+
+
+
+
+
+
+.lxtext_report	{
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	color: #333;
+
+	text-decoration: none;
+
+	line-height: 17px;
+
+	text-align: center;
+
+}
+
+.lxtext_report:link	{
+
+	color: #333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_report:visited{
+
+	color: #333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_report:hover {
+
+	color: #299482;
+
+}
+
+
+
+.lxindex_report	{
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	color: #0066b3;
+
+	text-decoration: none;
+
+	line-height: 17px;
+
+	text-align: center;
+
+}
+
+.lxindex_report:link	{
+
+	color: #0066b3;
+
+	text-decoration: none
+
+}
+
+
+
+.lxindex_report:visited{
+
+	color: #0066b3;
+
+	text-decoration: none
+
+}
+
+
+
+.lxindex_report:hover {
+
+	color: #299482;
+
+}
+
+
+
+
+
+
+
+.lxtextTable:link	{
+
+	color: #0066ff;
+
+	text-decoration: underline;
+
+}
+
+
+
+.lxtextTable:visited{
+
+	color: #0066ff;
+
+	text-decoration: underline;
+
+}
+
+
+
+
+
+.lxtextTable:hover {
+
+	color: #FFCC00;
+
+	text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+.texts {
+
+	font-family: "宋体";
+
+	font-size: 10px;
+
+	color: #666;
+
+	line-height: 18px;
+
+}
+
+
+
+.texts2 {
+
+
+	font-size: 12px;
+
+	color: #333333;
+
+	background-position: center;
+
+}
+
+.texts2:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+.texts2:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+.texts2:hover {
+
+	color: #a6ce39;
+
+}
+
+
+
+
+
+.texts3 {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333;
+
+	line-height: 18px;
+
+	padding-left: 5px;
+
+}
+
+.texts2_date {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	color: #0066b3;
+
+	line-height: 17px;
+
+	padding-right: 5px;
+
+}
+
+
+
+.date {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	text-transform: none;
+
+	color: #0066b3;
+
+	line-height: 17px;
+
+}
+
+
+
+
+
+.date_report {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	text-transform: none;
+
+	color: #478bca;
+
+	line-height: 18px;
+
+}
+
+
+
+
+
+.footer {
+
+	font-family: "宋体";
+
+	font-size: 11px;
+
+	background-position: center;
+
+	color: #858481;
+
+	line-height: 20px;
+
+}
+
+
+
+
+
+
+
+.imgShadow {
+
+
+
+filter:progid:DXImageTransform.Microsoft.Shadow(Color=#929292,  
+
+Strength=5, Direction=135)
+
+}
+
+
+
+
+
+.textTableHead {
+
+	PADDING-RIGHT: 2px;
+
+	PADDING-LEFT: 4px;
+
+	FONT-SIZE: 12px;
+
+	PADDING-BOTTOM: 4px;
+
+	COLOR: #333333;
+
+	LINE-HEIGHT: 18px;
+
+	PADDING-TOP: 4px;
+
+	font-family: "宋体";
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #6f9dc6;
+
+	font-weight: bold;
+
+	text-transform: uppercase;
+
+	background-color: #fffed6;
+
+	border-top-width: 1px;
+
+	border-top-style: solid;
+
+	border-top-color: #6f9dc6;
+
+}
+
+
+
+
+
+
+
+.lxtext_top	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+	text-align: justify;
+
+}
+
+.lxtext_top:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_top:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_top:hover {
+
+	color: #709114;
+
+}
+
+
+
+
+
+.lxtext_date	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #000000;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+	text-align: justify;
+
+}
+
+.lxtext_date:link	{
+
+	color: #000000;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_date:visited{
+
+	color: #000000;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_date:hover {
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	color: #962e45;
+
+	text-decoration: none;
+
+	line-height: 18px;
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+
+
+
+
+.lxrightmenu	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #478bca;
+
+	text-decoration: none;
+
+	line-height: 19px;
+
+	font-weight: bold;
+
+    text-align: left;
+
+	width: 146px;
+
+	display:block;
+
+	padding-left: 7px;
+
+	padding-top: 4px;
+
+	padding-bottom: 4px;
+
+	background-image: url("../img/right_menu_bg.gif")/*tpa=http://www.cethl.com/img/right_menu_bg.gif*/;
+
+	background-repeat: no-repeat;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dotted;
+
+	border-bottom-color: #e5e5e5;
+
+}
+
+.lxrightmenu:link	{
+
+	color: #478bca;
+
+	text-decoration: none;
+
+	background-repeat: no-repeat;
+
+}
+
+.lxrightmenu:visited{
+
+	color: #478bca;
+
+	text-decoration: none;
+
+
+
+}
+
+.lxrightmenu:hover {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #478bca;
+
+	text-decoration: none;
+
+	background-repeat: no-repeat;
+
+	padding-left: 7px;
+
+	padding-top: 4px;
+
+	padding-bottom: 4px;
+
+	background-image: url("../img/right_menu_bg_o.gif")/*tpa=http://www.cethl.com/img/right_menu_bg_o.gif*/;
+
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+
+.menu_bg	{
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dotted;
+
+	border-bottom-color: #e5e5e5;
+
+}
+
+
+
+.lxmenu	{
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+	font-weight: bold;
+
+	text-align: left;
+
+	width: 172x;
+
+	display:block;
+
+	padding-left: 18px;
+
+	padding-top: 4px;
+
+	padding-bottom: 2px;
+
+/*	background-image: url(../img/side_menu_arrow.gif);
+
+
+
+	background-repeat: no-repeat;
+
+*/	border-bottom-width: 1px;
+
+	border-bottom-style: dashed;
+
+	border-bottom-color: #d5d5d7;
+
+}
+
+.lxmenu:link	{
+
+	color: #333333;
+
+	text-decoration: none;
+
+	background-repeat: no-repeat;
+
+}
+
+.lxmenu:visited{
+
+	color: #333333;
+
+	text-decoration: none;
+
+
+
+}
+
+.lxmenu:hover {
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	color: #709114;
+
+	text-decoration: none;
+
+	padding-left: 18px;
+
+	padding-top: 4px;
+
+	padding-bottom: 2px;
+
+/*	background-image: url(../img/side_menu_arrow_o.gif);
+
+	background-repeat: no-repeat;*/
+
+}
+
+
+
+.lxmenu_o	{
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	color: #709114;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+	font-weight: bold;
+
+	text-align: left;
+
+	width: 172x;
+
+	display:block;
+
+	padding-left: 18px;
+
+	padding-top: 4px;
+
+	padding-bottom: 2px;
+
+/*	background-image: url(../img/side_menu_arrow_o.gif);
+
+	background-repeat: no-repeat;
+
+*/	border-bottom-width: 1px;
+
+	border-bottom-style: dashed;
+
+	border-bottom-color: #d5d5d7;
+
+}
+
+.lxmenu_o:link	{
+
+	color: #709114;
+
+	text-decoration: none;
+
+	background-repeat: no-repeat;
+
+}
+
+.lxmenu_o:visited{
+
+	color: #709114;
+
+	text-decoration: none;
+
+
+
+}
+
+.lxmenu_o:hover {
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	color: #709114;
+
+	text-decoration: none;
+
+	padding-left: 18px;
+
+	padding-top: 4px;
+
+	padding-bottom: 2px;
+
+/*	background-image: url(../img/side_menu_arrow_o.gif);
+
+	background-repeat: no-repeat;
+
+*/}
+.lxmenus {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333333;
+	text-decoration: none;
+	line-height: 22px;
+	font-weight: bold;
+	text-align: left;
+	width: 172x;
+	display:block;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+
+}
+.lxmenus:link {
+	color: #333333;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+.lxmenus:visited {
+	color: #333333;
+	text-decoration: none;
+}
+.lxmenus:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #709114;
+	text-decoration: none;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 2px;/*	background-image: url(../img/side_menu_arrow_o.gif);
+
+	background-repeat: no-repeat;*/
+
+}
+.lxmenus_o {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #709114;
+	text-decoration: none;
+	line-height: 22px;
+	font-weight: bold;
+	text-align: left;
+	width: 172x;
+	display:block;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+
+}
+.lxmenus_o:link {
+	color: #709114;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+.lxmenus_o:visited {
+	color: #709114;
+	text-decoration: none;
+}
+.lxmenus_o:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #709114;
+	text-decoration: none;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 2px;/*	background-image: url(../img/side_menu_arrow_o.gif);
+
+	background-repeat: no-repeat;
+
+*/}
+
+
+
+.lxmenu_s	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+}
+
+.lxmenu_s:link	{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxmenu_s:visited{
+
+	color: #333333;
+
+	text-decoration: none
+
+}
+
+
+
+.lxmenu_s:hover {
+
+	color: #3095cf;
+
+	text-decoration: none
+
+}
+
+
+
+.lxmenu_s_o	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #709114;
+
+	text-decoration: none;
+
+	line-height: 20px;
+
+}
+
+.lxmenu_s_o:link	{
+
+	color: #709114;
+
+	text-decoration: none
+
+}
+
+
+
+.lxmenu_s_o:visited{
+
+	color: #709114;
+
+	text-decoration: none
+
+}
+
+
+
+.lxmenu_s_o:hover {
+
+	color: #709114;
+
+	text-decoration: none
+
+}
+
+
+
+
+
+
+
+.text_top {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #999999;
+
+	text-decoration: none;
+
+	line-height: 17px;
+
+}
+
+
+
+
+
+.lxtext_footer	{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #000000;
+
+	background-position: center;
+
+}
+
+.lxtext_footer:link	{
+
+	color: #000000;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_footer:visited{
+
+	color: #000000;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_footer:hover {
+
+	color: #a6ce39;
+
+}
+
+
+
+.lxtext_sitemap	{
+
+	font-family: "宋体";
+
+	font-size: 11px;
+
+	color: #424242;
+
+	background-position: center;
+
+}
+
+.lxtext_sitemap:link	{
+
+	color: #424242;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_sitemap:visited{
+
+	color: #424242;
+
+	text-decoration: none
+
+}
+
+
+
+.lxtext_sitemap:hover {
+
+	color: #962e45;
+
+}
+
+
+
+.lxsubhead{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #333333;
+
+	display:block;
+
+	line-height: 18px;
+
+	padding-left: 10px;
+
+	background-image: url("../img/mu_sub_dot.gif")/*tpa=http://www.cethl.com/img/mu_sub_dot.gif*/;
+
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+
+.lxsubhead:link	{
+
+	color: #333333;
+
+	text-decoration: none;
+
+}
+
+
+
+.lxsubhead:visited{
+
+	color: #333333;
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.lxsubhead:hover {
+
+	color: #478bca;
+
+	text-decoration: none;
+
+	display:block;
+
+	background-image: url("../img/mu_sub_dot_o.gif")/*tpa=http://www.cethl.com/img/mu_sub_dot_o.gif*/;
+
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+
+
+
+.lxsubhead_o{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #299482;
+
+	display:block;
+
+	padding-left: 10px;
+
+	line-height: 18px;
+
+	background-image: url("../img/mu_sub_dot_o.gif")/*tpa=http://www.cethl.com/img/mu_sub_dot_o.gif*/;
+
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+
+.lxsubhead_o:link	{
+
+	color: #299482;
+
+	text-decoration: none;
+
+}
+
+
+
+.lxsubhead_o:visited{
+
+	color: #299482;
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.lxsubhead_o:hover {
+
+	color: #299482;
+
+	text-decoration: none;
+
+	display:block;
+
+	background-image: url("../img/mu_sub_dot_o.gif")/*tpa=http://www.cethl.com/img/mu_sub_dot_o.gif*/;
+
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+
+.lxsubsubhead{
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	color: #0c2f5a;
+
+	background-image: url("../img/mu_arrow_01.gif")/*tpa=http://www.cethl.com/img/mu_arrow_01.gif*/;
+
+	background-repeat: no-repeat;
+
+	font-weight: bold;
+
+	line-height: 28px;
+
+
+
+}
+
+
+
+.lxsubsubhead:link	{
+
+	color: #0082c5;
+
+	text-decoration: none;
+
+	background-image: url("../img/mu_arrow.gif")/*tpa=http://www.cethl.com/img/mu_arrow.gif*/;
+
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+
+.lxsubsubhead:visited{
+
+	color: #0082c5;
+
+	text-decoration: none;
+
+	background-image: url("../img/mu_arrow.gif")/*tpa=http://www.cethl.com/img/mu_arrow.gif*/;
+
+
+
+}
+
+
+
+.lxsubsubhead:hover {
+
+	color: #C00;
+
+	text-decoration: none;
+
+	background-image: url("../img/mu_arrow.gif")/*tpa=http://www.cethl.com/img/mu_arrow.gif*/;
+
+	background-repeat: no-repeat;
+
+
+
+}
+
+.textTable_ir_22{
+
+	FONT-SIZE: 12px;
+
+	COLOR: #333333;
+
+	LINE-HEIGHT: 22px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	border-bottom-width: 2px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #94c43a;
+
+	padding-top: 5px;
+
+	padding-bottom: 5px;
+
+}
+
+
+.textTable_ir{
+
+	FONT-SIZE: 12px;
+
+	COLOR: #000000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dashed;
+
+	border-bottom-color: #D5D5D7;
+
+	padding-top: 5px;
+
+	padding-bottom: 5px;
+
+}
+
+
+
+
+.textTable_links{
+
+	FONT-SIZE: 12px;
+
+	COLOR: #000000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family: "宋体";
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dotted;
+
+	border-bottom-color: #CCCCCC;
+
+	padding-top: 15px;
+
+	padding-bottom: 15px;
+
+	padding-right: 10px;
+
+	padding-left: 10px;
+
+}
+
+
+
+.textTable_new{
+
+	FONT-SIZE: 12px;
+
+	COLOR: #000000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family: "宋体";
+
+	padding-top: 4px;
+
+	padding-bottom: 4px;	
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #dfdde1;
+
+}
+
+
+
+
+
+.textTable_ir{
+
+	FONT-SIZE: 12px;
+
+	COLOR: #000000;
+
+	LINE-HEIGHT: 17px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: dashed;
+
+	border-bottom-color: #D5D5D7;
+
+	padding-top: 5px;
+
+	padding-bottom: 5px;
+
+}
+
+
+
+
+
+
+.textTable_sitemap{
+
+	padding-left: 12px;
+
+	padding-top: 3px;
+
+	padding-bottom: 3px;
+
+	padding-left: 10px;
+
+	border-bottom-width: 5px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #FFF;
+
+	border-right-width: 20px;
+
+	border-left-width: 20px;
+
+	border-right-style: solid;
+
+	border-left-style: solid;
+
+	border-right-color: #FFF;
+
+	border-left-color: #FFF;
+
+}
+
+
+
+.textTable_sitemap_02{
+
+	padding-left: 12px;
+
+	padding-top: 3px;
+
+	padding-bottom: 3px;
+
+	padding-left: 6px;
+
+	border-top-width: 3px;
+
+	border-bottom-width: 3px;
+
+	border-top-style: solid;
+
+	border-bottom-style: solid;
+
+	border-top-color: #D8E6F1;
+
+	border-bottom-color: #D8E6F1;
+
+}
+
+
+
+.caption {
+
+	font-family: "宋体";
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #ee383a;
+
+}
+
+
+
+.head_line {
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #ee383a;
+
+	font-family: "宋体";
+
+	font-size: 13px;
+
+	font-weight: bold;
+
+	line-height: 25px;
+
+	color: #00679E;
+
+}
+
+
+
+.text_highlight_line {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 30px;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #999;
+
+}
+
+.top_anniu {	font-family:"宋体";
+
+	font-size: 12px;
+
+	color: #FF0000;
+
+}
+
+.mus {
+
+	font-family:"宋体";
+
+	font-size: 12px;
+
+	color: #a2a48a;
+
+	 
+
+	font-weight: 200;
+
+}
+
+.mus a {	font-family:"宋体";
+
+	font-size: 12px;
+
+	color: #a2a48a;
+
+	text-decoration: none;
+
+	font-weight: lighter;
+
+}
+
+.mus a:hover {	font-family:"宋体";
+
+	font-size: 12px;
+
+	color: #FF0000;
+
+	text-decoration: none;
+
+	font-weight: lighter;
+
+}
+
+.se {
+
+	font-family: "宋体";
+
+	font-size: 12px;
+
+	font-weight: bolder;
+
+	color: #6b81c2;
+
+}
+
+.text_highlight_line {
+
+	font-family:Arial, Helvetica, sans-serif;
+	
+	font-size: 12px;
+	
+	line-height:25px;
+	
+	color: #333333;
+	
+	border-bottom: solid 1px #bbda83;
+}
+.textBB {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+}
+
+
+
+.textBB:link {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+	text-decoration: none
+
+}
+
+.textBB:visited {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+	text-decoration: none
+
+}
+
+.textBB:hover {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 14px;
+
+	font-weight: bold;
+
+	text-transform: none;
+
+	color: #709114;
+
+	line-height: 20px;
+
+	text-decoration: none
+
+}
+
+.textaa{
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	color: #333333;
+
+	text-decoration: none;
+
+	line-height: 22px;
+
+	text-align: justify;
+
+}
+.result_bg {
+
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-size: 14px;
+	
+	color: #0863c9;
+	
+	background-color: #ffffff;
+	
+	border: 1px solid #9bdaff;
+	
+	font-weight: 600;
+}
+.result_bg_zi {
+
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-size: 12px;
+	
+	color: #333;
+	
+	background-color: #ffffff;
+	
+	border: 1px solid #9bdaff;
+}
+.textTable_ir_date {
+
+	background-color: #f6f6f6;
+	
+	border: 1px solid #bdbdbd;
+}
+.border_table {
+
+	FONT-SIZE: 12px;
+	
+	COLOR: #333333;
+	
+	LINE-HEIGHT: 22px;
+	
+	padding: 6px;
+	
+    border-bottom:1px dotted #d9d9d9;
+}	
+.date_report01 {
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size: 16px;
+
+	text-transform: none;
+
+	color: #478bca;
+
+	line-height: 18px;
+	
+	font-weight:bold;
+
+}
+.mouse_line {
+	font-family:"宋体";
+	
+	font-size: 12px;
+	
+	color: #333333;
+	
+	text-decoration: none;
+}
+.mouse_line:link {
+	font-family:"宋体";
+	
+	font-size: 12px;
+	
+	color: #333333;
+	
+	text-decoration: none;
+}
+.mouse_line:visited {
+	font-family:"宋体";
+	
+	font-size: 12px;
+	
+	color: #333333;
+	
+	text-decoration: none;
+}
+.mouse_line:hover {
+	font-family:"宋体";
+	
+	font-size: 12px;
+	
+	color: #709114;
+	
+	text-decoration: underline;
+}
+.cope_border{
+	border:1px solid #D5D5D5;
+	padding: 30px;
+}
+.kuangxian{
+	line-height: 20px;
+    border:1px solid #cccccc;
+}
